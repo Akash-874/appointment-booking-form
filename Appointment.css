@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.submitmsg {
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Row layout with images and inputs */
+.content div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Image and input styling */
+.content img {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Checkbox and radio button styling */
+.third {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+/* Submit button styling */
+.btn button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn button:hover {
+    background-color: #218838;
+}
+
+/* Doctor image styling */
+.doc {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+    /* Adjust the width to fit nicely */
+    border-radius: 10px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .doc {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        /* Make the image take full width on small screens */
+        height: auto;
+    }
+}
