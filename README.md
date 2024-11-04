@@ -15,6 +15,3 @@ A PHP-based appointment booking form that allows users to submit their details f
 
 **Author**  
 Akash Gaikwad
-
-**License**  
-This project is licensed under the MIT License.
