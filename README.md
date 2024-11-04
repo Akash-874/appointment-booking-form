@@ -12,6 +12,3 @@ A PHP-based appointment booking form that allows users to submit their details f
 - PHP
 - MySQL
 - HTML & CSS
-
-**Author**  
-Akash Gaikwad
